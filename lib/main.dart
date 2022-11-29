@@ -39,7 +39,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     bool isDark = false;
     return MultiProvider(
-      providers: [],
+      providers: [
+        ChangeNotifierProvider(create: (_) {
+          return themeChangeProvider;
+        })
+      ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: Styles.themeData(true, context),
