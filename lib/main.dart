@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:grocery_app_hadi_v1/const/theme_data.dart';
+import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -15,6 +16,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+  DarkThemeProvider themeChangeProvider = DarkThemeProvider();
   void getCurrentAppThem() {}
 
   @override
