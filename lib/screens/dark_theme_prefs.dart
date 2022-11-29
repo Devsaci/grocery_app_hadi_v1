@@ -1,1 +1,3 @@
-class DarkthemePrefs {}
+class DarkthemePrefs {
+  setDarkTheme() {}
+}
