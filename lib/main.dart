@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.amber,
+        scaffoldBackgroundColor: isDark ? Colors.amber : Colors.green,
         primarySwatch: Colors.blue,
       ),
       home: const HomeScreen(),
