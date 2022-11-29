@@ -14,10 +14,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
-  bool isDark = false;
+  const MyApp({Key? key}) : super(key: key);
+  void getCurrentAppThem() {}
+
   @override
   Widget build(BuildContext context) {
+    bool isDark = false;
     return MultiProvider(
       providers: [],
       child: MaterialApp(
