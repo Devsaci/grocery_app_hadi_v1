@@ -7,4 +7,6 @@ class DarkthemePrefs {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setBool(THEME_STATUS, value);
   }
+
+  getTheme() {}
 }
