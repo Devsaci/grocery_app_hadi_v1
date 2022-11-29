@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:grocery_app_hadi_v1/const/theme_data.dart';
 import 'package:grocery_app_hadi_v1/screens/home_screen.dart';
 
 void main() {
@@ -18,10 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        scaffoldBackgroundColor: isDark ? Colors.amber : Colors.green,
-        primarySwatch: Colors.blue,
-      ),
+      theme: Styles.themeData(true, context),
       home: const HomeScreen(),
     );
   }
