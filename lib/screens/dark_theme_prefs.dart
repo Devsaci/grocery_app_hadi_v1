@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 class DarkthemePrefs {
@@ -8,5 +10,8 @@ class DarkthemePrefs {
     prefs.setBool(THEME_STATUS, value);
   }
 
-  getTheme() {}
+  Future<bool> getTheme() async {
+    await SharedPreferences.getInstance();
+    return true;
+  }
 }
