@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
           return themeChangeProvider;
         })
       ],
-      child: Builder(builder: (context) {
+      child: Consumer(builder: (context, themeProvider, child) {
         return MaterialApp(
           title: 'Flutter Demo',
           theme: Styles.themeData(true, context),
