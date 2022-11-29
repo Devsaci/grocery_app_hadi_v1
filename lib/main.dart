@@ -44,10 +44,14 @@ class _MyAppState extends State<MyApp> {
           return themeChangeProvider;
         })
       ],
-      child: Consumer(builder: (context, themeProvider, child) {
+      child: Consumer<DarkThemeProvider>(builder: (
+        context,
+        themeProvider,
+        child,
+      ) {
         return MaterialApp(
           title: 'Flutter Demo',
-          theme: Styles.themeData(true, context),
+          theme: Styles.themeData(themeProvider.getDarkTheme, context),
           home: const HomeScreen(),
         );
       }),
