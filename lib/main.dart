@@ -15,9 +15,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
   DarkThemeProvider themeChangeProvider = DarkThemeProvider();
-  void getCurrentAppThem() {}
+  Future<void> getCurrentAppThem() async {
+    themeChangeProvider.setDarkTheme =
+        await themeChangeProvider.darkThemePrefs.getTheme();
+  }
 
   @override
   Widget build(BuildContext context) {
