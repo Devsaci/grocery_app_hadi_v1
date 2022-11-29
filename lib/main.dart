@@ -44,11 +44,13 @@ class _MyAppState extends State<MyApp> {
           return themeChangeProvider;
         })
       ],
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: Styles.themeData(true, context),
-        home: const HomeScreen(),
-      ),
+      child: Builder(builder: (context) {
+        return MaterialApp(
+          title: 'Flutter Demo',
+          theme: Styles.themeData(true, context),
+          home: const HomeScreen(),
+        );
+      }),
     );
   }
 }
