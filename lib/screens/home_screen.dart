@@ -8,8 +8,16 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: SwitchListTile(
+          secondary: const Icon(Icons.light_mode_outlined),
+          title: const Text(
+            "Theme",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+            ),
+          ),
           value: false,
-          onChanged: (value) {},
+          onChanged: (bool value) {},
         ),
       ),
     );
