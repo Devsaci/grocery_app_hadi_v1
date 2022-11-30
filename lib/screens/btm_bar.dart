@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:grocery_app_hadi_v1/screens/cart.dart';
@@ -13,15 +14,24 @@ class BottomBarScreen extends StatefulWidget {
 }
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
-  final List<Map<String, dynamic>> _pages = [
-    {'page': const HomeScreen(), 'title': 'Home Screen'},
-    {'page': const CategoriesScreen(), 'title': 'Categories Screen'},
-    {'page': const CartScreen(), 'title': 'Cart Screen'},
-    {'page': const UserScreen(), 'title': 'user Screen'},
+  int _selectedIndex = 0;
+  final List _pages = [
+    const HomeScreen(),
+    const CategoriesScreen(),
+    const CartScreen(),
+    const UserScreen(),
   ];
+
+  void _selectedPage(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: _pages[_selectedIndex],
+    );
   }
 }
