@@ -20,11 +20,11 @@ class HomeScreen extends StatelessWidget {
           title: const Text(
             "Theme",
             style: TextStyle(
-              color: Colors.black,
+              // color: Colors.black,
               fontSize: 20,
             ),
           ),
-          value: false,
+          value: themeState.getDarkTheme,
           onChanged: (bool value) {
             themeState.setDarkTheme = value;
           },
