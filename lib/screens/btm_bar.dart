@@ -32,6 +32,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         currentIndex: _selectedIndex,
         onTap: _selectedPage,
         items: const <BottomNavigationBarItem>[
