@@ -32,16 +32,17 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
   @override
   Widget build(BuildContext context) {
     final themeState = Provider.of<DarkThemeProvider>(context);
+    bool _isDark = themeState.getDarkTheme;
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: themeState.getDarkTheme
-            ? Theme.of(context).cardColor
-            : Colors.white,
+        backgroundColor: _isDark ? Theme.of(context).cardColor : Colors.white,
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
+        unselectedItemColor: _isDark ? Colors.white70 : Colors.black12,
+        selectedItemColor: _isDark ? Colors.lightBlue.shade500 : Colors.black87,
         onTap: _selectedPage,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
