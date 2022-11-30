@@ -25,7 +25,9 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           value: false,
-          onChanged: (bool value) {},
+          onChanged: (bool value) {
+            themeState.setDarkTheme = value;
+          },
         ),
       ),
     );
