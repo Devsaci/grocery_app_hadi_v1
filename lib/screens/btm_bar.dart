@@ -37,21 +37,29 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
         onTap: _selectedPage,
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(IconlyBold.home),
+            icon: _selectedIndex == 0
+                ? const Icon(IconlyBold.home)
+                : const Icon(IconlyLight.home),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyBold.category),
+            icon: _selectedIndex == 1
+                ? const Icon(IconlyBold.category)
+                : const Icon(IconlyLight.category),
             label: "Categories",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyBold.buy),
+            icon: _selectedIndex == 2
+                ? const Icon(IconlyBold.buy)
+                : const Icon(IconlyLight.buy),
             label: "Cart",
           ),
           BottomNavigationBarItem(
-            icon: Icon(IconlyBold.user2),
+            icon: _selectedIndex == 3
+                ? const Icon(IconlyBold.user2)
+                : const Icon(IconlyLight.user2),
             label: "User",
           ),
         ],
