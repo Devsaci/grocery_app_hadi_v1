@@ -11,7 +11,13 @@ class _UserScreenState extends State<UserScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Title(color: Colors.deepOrange, child: const Text("UserScreen")),
+      backgroundColor: Colors.teal,
+      body: Center(
+        child: Title(
+          color: Colors.deepOrange,
+          child: const Text("UserScreen"),
+        ),
+      ),
     );
   }
 }

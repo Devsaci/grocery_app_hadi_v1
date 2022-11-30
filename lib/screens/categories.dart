@@ -11,7 +11,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Title(color: Colors.cyan, child: const Text("CategoriesScreen")),
+      backgroundColor: Colors.cyan,
+      body: Center(
+        child: Title(
+          color: Colors.cyan,
+          child: const Text("CategoriesScreen"),
+        ),
+      ),
     );
   }
 }
