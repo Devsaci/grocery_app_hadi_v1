@@ -9,11 +9,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Provider.of<DarkThemeProvider>(context);
+    final themeState = Provider.of<DarkThemeProvider>(context);
+
     return Scaffold(
       body: Center(
         child: SwitchListTile(
-          secondary: const Icon(Icons.light_mode_outlined),
+          secondary: Icon(themeState.getDarkTheme
+              ? Icons.dark_mode_outlined
+              : Icons.light_mode_outlined),
           title: const Text(
             "Theme",
             style: TextStyle(
