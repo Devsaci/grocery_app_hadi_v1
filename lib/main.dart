@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:grocery_app_hadi_v1/const/theme_data.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/screens/btm_bar.dart';
-import 'package:grocery_app_hadi_v1/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -11,7 +10,7 @@ void main() {
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]).then((_) {
-    runApp(MyApp());
+    runApp(const MyApp());
   });
 }
 
