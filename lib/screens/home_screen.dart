@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,7 +9,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Provider.of(context);
+    Provider.of<DarkThemeProvider>(context);
     return Scaffold(
       body: Center(
         child: SwitchListTile(
