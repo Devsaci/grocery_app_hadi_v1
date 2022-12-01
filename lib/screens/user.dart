@@ -20,6 +20,7 @@ class _UserScreenState extends State<UserScreen> {
           ),
           subtitle: Text('subtitle'),
           leading: Icon(IconlyLight.profile),
+          trailing: Icon(IconlyLight.arrowRight),
         ),
       ),
     );
