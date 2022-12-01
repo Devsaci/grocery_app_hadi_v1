@@ -12,7 +12,12 @@ class _UserScreenState extends State<UserScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: ListTile(),
+        child: ListTile(
+          title: Text(
+            'Address',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+        ),
       ),
     );
   }
