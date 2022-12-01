@@ -35,7 +35,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
     bool isDark = themeState.getDarkTheme;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("data"),
+        title: Text(
+          _pages[_selectedIndex]['title'],
+        ),
       ),
       body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
