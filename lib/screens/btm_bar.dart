@@ -16,11 +16,11 @@ class BottomBarScreen extends StatefulWidget {
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
   int _selectedIndex = 0;
-  final List _pages = [
-    const HomeScreen(),
-    const CategoriesScreen(),
-    const CartScreen(),
-    const UserScreen(),
+  final List<Map<String, dynamic>> _pages = [
+    {'page': const HomeScreen(), 'title': 'Home Screen'},
+    {'page': const CategoriesScreen(), 'title': 'Categories Screen'},
+    {'page': const CartScreen(), 'title': 'Cart Screen'},
+    {'page': const UserScreen(), 'title': 'User Screen'},
   ];
 
   void _selectedPage(int index) {
@@ -37,7 +37,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       appBar: AppBar(
         title: const Text("data"),
       ),
-      body: _pages[_selectedIndex],
+      body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: isDark ? Theme.of(context).cardColor : Colors.white,
         type: BottomNavigationBarType.fixed,
