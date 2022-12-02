@@ -16,10 +16,15 @@ class _UserScreenState extends State<UserScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _listTile(
-              title: 'Address 2',
-              subtitle: 'My subtitle',
+            _listTiles(
+              title: 'Address',
+              subtitle: 'My Address',
               icon: IconlyLight.profile,
+              onPressed: () {},
+            ),
+            _listTiles(
+              title: 'Orders',
+              icon: IconlyLight.bag,
               onPressed: () {},
             ),
           ],
@@ -28,7 +33,7 @@ class _UserScreenState extends State<UserScreen> {
     );
   }
 
-  Widget _listTile({
+  Widget _listTiles({
     required String title,
     String? subtitle,
     required IconData icon,
