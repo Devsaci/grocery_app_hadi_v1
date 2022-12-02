@@ -27,6 +27,11 @@ class _UserScreenState extends State<UserScreen> {
               icon: IconlyLight.bag,
               onPressed: () {},
             ),
+            _listTiles(
+              title: 'Wishlist',
+              icon: IconlyLight.heart,
+              onPressed: () {},
+            ),
           ],
         ),
       ),
@@ -44,7 +49,7 @@ class _UserScreenState extends State<UserScreen> {
         title,
         style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
       ),
-      subtitle: Text(subtitle!),
+      subtitle: Text(subtitle == null ? "" : subtitle),
       leading: const Icon(IconlyLight.profile),
       trailing: const Icon(IconlyLight.arrowRight),
       onTap: () {
@@ -53,3 +58,6 @@ class _UserScreenState extends State<UserScreen> {
     );
   }
 }
+
+TextWidget(
+    {required String text, required Color color, required int textSize}) {}
