@@ -33,6 +33,11 @@ class _UserScreenState extends State<UserScreen> {
               onPressed: () {},
             ),
             _listTiles(
+              title: 'Viewed',
+              icon: IconlyLight.show,
+              onPressed: () {},
+            ),
+            _listTiles(
               title: 'Forget password',
               icon: IconlyLight.unlock,
               onPressed: () {},
