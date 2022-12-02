@@ -15,37 +15,36 @@ class _UserScreenState extends State<UserScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            ListTile(
-              title: Text(
-                'Address',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text('subtitle'),
-              leading: Icon(IconlyLight.profile),
-              trailing: Icon(IconlyLight.arrowRight),
-            ),
-            ListTile(
-              title: Text(
-                'Address',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text('subtitle'),
-              leading: Icon(IconlyLight.profile),
-              trailing: Icon(IconlyLight.arrowRight),
-            ),
-            ListTile(
-              title: Text(
-                'Address',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text('subtitle'),
-              leading: Icon(IconlyLight.profile),
-              trailing: Icon(IconlyLight.arrowRight),
+          children: [
+            _listTile(
+              title: 'Address 2',
+              subtitle: 'My subtitle',
+              icon: IconlyLight.profile,
+              onPressed: () {},
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _listTile({
+    required String title,
+    String? subtitle,
+    required IconData icon,
+    required Function onPressed,
+  }) {
+    return ListTile(
+      title: Text(
+        title,
+        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      ),
+      subtitle: Text(subtitle!),
+      leading: const Icon(IconlyLight.profile),
+      trailing: const Icon(IconlyLight.arrowRight),
+      onTap: () {
+        onPressed() {}
+      },
     );
   }
 }
