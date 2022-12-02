@@ -32,6 +32,11 @@ class _UserScreenState extends State<UserScreen> {
               icon: IconlyLight.heart,
               onPressed: () {},
             ),
+            _listTiles(
+              title: 'Forget password',
+              icon: IconlyLight.unlock,
+              onPressed: () {},
+            ),
           ],
         ),
       ),
@@ -47,7 +52,7 @@ class _UserScreenState extends State<UserScreen> {
     return ListTile(
       title: Text(
         title,
-        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
       subtitle: Text(subtitle ?? ""),
       leading: Icon(icon),
