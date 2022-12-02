@@ -17,25 +17,24 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       body: Center(
-        child: SwitchListTile(
-          secondary: Icon(themeState.getDarkTheme
-              ? Icons.dark_mode_outlined
-              : Icons.light_mode_outlined),
-          title: const Text(
-            "Theme",
-            style: TextStyle(
-              // color: Colors.black,
-              fontSize: 20,
-            ),
+          child: SwitchListTile(
+        secondary: Icon(themeState.getDarkTheme
+            ? Icons.dark_mode_outlined
+            : Icons.light_mode_outlined),
+        title: const Text(
+          "Theme",
+          style: TextStyle(
+            // color: Colors.black,
+            fontSize: 20,
           ),
-          value: themeState.getDarkTheme,
-          onChanged: (bool value) {
-            setState(() {
-              themeState.setDarkTheme = value;
-            });
-          },
         ),
-      ),
+        value: themeState.getDarkTheme,
+        onChanged: (bool value) {
+          setState(() {
+            themeState.setDarkTheme = value;
+          });
+        },
+      )),
     );
   }
 }
