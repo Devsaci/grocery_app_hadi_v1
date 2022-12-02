@@ -50,7 +50,7 @@ class _UserScreenState extends State<UserScreen> {
         style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
       ),
       subtitle: Text(subtitle ?? ""),
-      leading: const Icon(IconlyLight.profile),
+      leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight),
       onTap: () {
         onPressed() {}
