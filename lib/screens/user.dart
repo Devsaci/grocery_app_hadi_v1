@@ -42,6 +42,11 @@ class _UserScreenState extends State<UserScreen> {
               icon: IconlyLight.unlock,
               onPressed: () {},
             ),
+            _listTiles(
+              title: 'Logout',
+              icon: IconlyLight.logout,
+              onPressed: () {},
+            ),
           ],
         ),
       ),
