@@ -49,7 +49,7 @@ class _UserScreenState extends State<UserScreen> {
         title,
         style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
       ),
-      subtitle: Text(subtitle == null ? "" : subtitle),
+      subtitle: Text(subtitle ?? ""),
       leading: const Icon(IconlyLight.profile),
       trailing: const Icon(IconlyLight.arrowRight),
       onTap: () {
