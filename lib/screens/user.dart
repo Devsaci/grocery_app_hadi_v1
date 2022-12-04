@@ -95,5 +95,5 @@ class _UserScreenState extends State<UserScreen> {
   }
 }
 
-TextWidget(
-    {required String text, required Color color, required int textSize}) {}
+// TextWidget(
+//     {required String text, required Color color, required int textSize}) {}
