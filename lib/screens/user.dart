@@ -95,6 +95,7 @@ class _UserScreenState extends State<UserScreen> {
         text: title,
         color: color,
         textSize: 22,
+        isTitle: true,
       ),
       // subtitle: Text(subtitle ?? ""),
       subtitle: TextWidget(
