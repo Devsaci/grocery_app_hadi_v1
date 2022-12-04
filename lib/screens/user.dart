@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 import 'package:provider/provider.dart';
 
 class UserScreen extends StatefulWidget {
@@ -14,6 +15,8 @@ class _UserScreenState extends State<UserScreen> {
   @override
   Widget build(BuildContext context) {
     final themeState = Provider.of<DarkThemeProvider>(context);
+
+    final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
     return Scaffold(
       body: Center(
         child: Column(
@@ -24,26 +27,31 @@ class _UserScreenState extends State<UserScreen> {
               subtitle: 'My Address',
               icon: IconlyLight.profile,
               onPressed: () {},
+              color: color,
             ),
             _listTiles(
               title: 'Orders',
               icon: IconlyLight.bag,
               onPressed: () {},
+              color: color,
             ),
             _listTiles(
               title: 'Wishlist',
               icon: IconlyLight.heart,
               onPressed: () {},
+              color: color,
             ),
             _listTiles(
               title: 'Viewed',
               icon: IconlyLight.show,
               onPressed: () {},
+              color: color,
             ),
             _listTiles(
               title: 'Forget password',
               icon: IconlyLight.unlock,
               onPressed: () {},
+              color: color,
             ),
             SwitchListTile(
               secondary: Icon(themeState.getDarkTheme
@@ -67,6 +75,7 @@ class _UserScreenState extends State<UserScreen> {
               title: 'Logout',
               icon: IconlyLight.logout,
               onPressed: () {},
+              color: color,
             ),
           ],
         ),
@@ -79,13 +88,20 @@ class _UserScreenState extends State<UserScreen> {
     String? subtitle,
     required IconData icon,
     required Function onPressed,
+    required Color color,
   }) {
     return ListTile(
-      title: Text(
-        title,
-        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      title: TextWidget(
+        text: title,
+        color: color,
+        textSize: 22,
       ),
-      subtitle: Text(subtitle ?? ""),
+      // subtitle: Text(subtitle ?? ""),
+      subtitle: TextWidget(
+        text: subtitle == null ? "" : subtitle,
+        color: color,
+        textSize: 10,
+      ),
       leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight),
       onTap: () {
