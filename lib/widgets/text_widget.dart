@@ -22,7 +22,7 @@ class TextWidget extends StatelessWidget {
       text,
       style: TextStyle(
         color: color,
-        fontSize: 20,
+        fontSize: textSize,
         fontWeight: FontWeight.bold,
       ),
     );
