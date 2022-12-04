@@ -18,66 +18,74 @@ class _UserScreenState extends State<UserScreen> {
 
     final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _listTiles(
-              title: 'Address',
-              subtitle: 'My Address',
-              icon: IconlyLight.profile,
-              onPressed: () {},
-              color: color,
-            ),
-            _listTiles(
-              title: 'Orders',
-              icon: IconlyLight.bag,
-              onPressed: () {},
-              color: color,
-            ),
-            _listTiles(
-              title: 'Wishlist',
-              icon: IconlyLight.heart,
-              onPressed: () {},
-              color: color,
-            ),
-            _listTiles(
-              title: 'Viewed',
-              icon: IconlyLight.show,
-              onPressed: () {},
-              color: color,
-            ),
-            _listTiles(
-              title: 'Forget password',
-              icon: IconlyLight.unlock,
-              onPressed: () {},
-              color: color,
-            ),
-            _listTiles(
-              title: 'Logout',
-              icon: IconlyLight.logout,
-              onPressed: () {},
-              color: color,
-            ),
-            SwitchListTile(
-              secondary: Icon(themeState.getDarkTheme
-                  ? Icons.dark_mode_outlined
-                  : Icons.light_mode_outlined),
-              title: const Text(
-                "Theme",
-                style: TextStyle(
-                  // color: Colors.black,
-                  fontSize: 20,
-                ),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Divider(
+                thickness: 5,
               ),
-              value: themeState.getDarkTheme,
-              onChanged: (bool value) {
-                setState(() {
-                  themeState.setDarkTheme = value;
-                });
-              },
-            ),
-          ],
+              const SizedBox(
+                height: 15,
+              ),
+              _listTiles(
+                title: 'Address',
+                subtitle: 'My Address',
+                icon: IconlyLight.profile,
+                onPressed: () {},
+                color: color,
+              ),
+              _listTiles(
+                title: 'Orders',
+                icon: IconlyLight.bag,
+                onPressed: () {},
+                color: color,
+              ),
+              _listTiles(
+                title: 'Wishlist',
+                icon: IconlyLight.heart,
+                onPressed: () {},
+                color: color,
+              ),
+              _listTiles(
+                title: 'Viewed',
+                icon: IconlyLight.show,
+                onPressed: () {},
+                color: color,
+              ),
+              _listTiles(
+                title: 'Forget password',
+                icon: IconlyLight.unlock,
+                onPressed: () {},
+                color: color,
+              ),
+              _listTiles(
+                title: 'Logout',
+                icon: IconlyLight.logout,
+                onPressed: () {},
+                color: color,
+              ),
+              SwitchListTile(
+                secondary: Icon(themeState.getDarkTheme
+                    ? Icons.dark_mode_outlined
+                    : Icons.light_mode_outlined),
+                title: const Text(
+                  "Theme",
+                  style: TextStyle(
+                    // color: Colors.black,
+                    fontSize: 20,
+                  ),
+                ),
+                value: themeState.getDarkTheme,
+                onChanged: (bool value) {
+                  setState(() {
+                    themeState.setDarkTheme = value;
+                  });
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
