@@ -21,6 +21,7 @@ class _UserScreenState extends State<UserScreen> {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               RichText(
