@@ -23,6 +23,19 @@ class _UserScreenState extends State<UserScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              RichText(
+                text: const TextSpan(
+                  text: 'Hi,  ',
+                  style: TextStyle(
+                    color: Colors.cyan,
+                    fontSize: 27,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
               const Divider(
                 thickness: 5,
               ),
