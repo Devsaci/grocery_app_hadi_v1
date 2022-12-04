@@ -50,10 +50,13 @@ class _UserScreenState extends State<UserScreen> {
                     ],
                   ),
                 ),
+                const SizedBox(
+                  height: 5,
+                ),
                 TextWidget(
-                  text: "sacideveloppeur@gmail.com",
+                  text: "saci@gmail.com",
                   color: color,
-                  textSize: 22,
+                  textSize: 18,
                   isTitle: true,
                 ),
                 const SizedBox(
@@ -106,12 +109,12 @@ class _UserScreenState extends State<UserScreen> {
                   secondary: Icon(themeState.getDarkTheme
                       ? Icons.dark_mode_outlined
                       : Icons.light_mode_outlined),
-                  title: const Text(
-                    "Theme",
-                    style: TextStyle(
-                      // color: Colors.black,
-                      fontSize: 20,
-                    ),
+                  title: TextWidget(
+                    text:
+                        themeState.getDarkTheme ? "Dark Theme" : "Light Theme",
+                    color: color,
+                    textSize: 18,
+                    isTitle: true,
                   ),
                   value: themeState.getDarkTheme,
                   onChanged: (bool value) {
