@@ -20,6 +20,7 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      maxLines: maxLines,
       style: TextStyle(
         color: color,
         fontSize: textSize,
