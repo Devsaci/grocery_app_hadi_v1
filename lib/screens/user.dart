@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
@@ -27,14 +28,33 @@ class _UserScreenState extends State<UserScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 RichText(
-                  text: const TextSpan(
+                  text: TextSpan(
                     text: 'Hi,  ',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.cyan,
                       fontSize: 27,
                       fontWeight: FontWeight.bold,
                     ),
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: 'MyName',
+                          style: TextStyle(
+                            color: color,
+                            fontSize: 25,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              print('My Name Is toto la musique');
+                            }),
+                    ],
                   ),
+                ),
+                TextWidget(
+                  text: "sacideveloppeur@gmail.com",
+                  color: color,
+                  textSize: 22,
+                  isTitle: true,
                 ),
                 const SizedBox(
                   height: 15,
