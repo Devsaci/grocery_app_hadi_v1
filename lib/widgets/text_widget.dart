@@ -5,10 +5,12 @@ class TextWidget extends StatelessWidget {
     Key? key,
     required this.text,
     required this.color,
+    required this.textSize,
   }) : super(key: key);
 
   final String text;
   final Color color;
+  final double textSize;
 
   @override
   Widget build(BuildContext context) {
