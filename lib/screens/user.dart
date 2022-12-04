@@ -18,7 +18,7 @@ class _UserScreenState extends State<UserScreen> {
 
     final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
     return Scaffold(
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -53,6 +53,12 @@ class _UserScreenState extends State<UserScreen> {
               onPressed: () {},
               color: color,
             ),
+            _listTiles(
+              title: 'Logout',
+              icon: IconlyLight.logout,
+              onPressed: () {},
+              color: color,
+            ),
             SwitchListTile(
               secondary: Icon(themeState.getDarkTheme
                   ? Icons.dark_mode_outlined
@@ -70,12 +76,6 @@ class _UserScreenState extends State<UserScreen> {
                   themeState.setDarkTheme = value;
                 });
               },
-            ),
-            _listTiles(
-              title: 'Logout',
-              icon: IconlyLight.logout,
-              onPressed: () {},
-              color: color,
             ),
           ],
         ),
@@ -95,7 +95,7 @@ class _UserScreenState extends State<UserScreen> {
         text: title,
         color: color,
         textSize: 22,
-        // isTitle: true,
+        isTitle: true,
       ),
       // subtitle: Text(subtitle ?? ""),
       subtitle: TextWidget(
