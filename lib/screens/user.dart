@@ -20,85 +20,88 @@ class _UserScreenState extends State<UserScreen> {
     return Scaffold(
       body: Center(
         child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              RichText(
-                text: const TextSpan(
-                  text: 'Hi,  ',
-                  style: TextStyle(
-                    color: Colors.cyan,
-                    fontSize: 27,
-                    fontWeight: FontWeight.bold,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                RichText(
+                  text: const TextSpan(
+                    text: 'Hi,  ',
+                    style: TextStyle(
+                      color: Colors.cyan,
+                      fontSize: 27,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              const Divider(
-                thickness: 5,
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              _listTiles(
-                title: 'Address',
-                subtitle: 'My Address',
-                icon: IconlyLight.profile,
-                onPressed: () {},
-                color: color,
-              ),
-              _listTiles(
-                title: 'Orders',
-                icon: IconlyLight.bag,
-                onPressed: () {},
-                color: color,
-              ),
-              _listTiles(
-                title: 'Wishlist',
-                icon: IconlyLight.heart,
-                onPressed: () {},
-                color: color,
-              ),
-              _listTiles(
-                title: 'Viewed',
-                icon: IconlyLight.show,
-                onPressed: () {},
-                color: color,
-              ),
-              _listTiles(
-                title: 'Forget password',
-                icon: IconlyLight.unlock,
-                onPressed: () {},
-                color: color,
-              ),
-              _listTiles(
-                title: 'Logout',
-                icon: IconlyLight.logout,
-                onPressed: () {},
-                color: color,
-              ),
-              SwitchListTile(
-                secondary: Icon(themeState.getDarkTheme
-                    ? Icons.dark_mode_outlined
-                    : Icons.light_mode_outlined),
-                title: const Text(
-                  "Theme",
-                  style: TextStyle(
-                    // color: Colors.black,
-                    fontSize: 20,
-                  ),
+                const SizedBox(
+                  height: 15,
                 ),
-                value: themeState.getDarkTheme,
-                onChanged: (bool value) {
-                  setState(() {
-                    themeState.setDarkTheme = value;
-                  });
-                },
-              ),
-            ],
+                const Divider(
+                  thickness: 5,
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                _listTiles(
+                  title: 'Address',
+                  subtitle: 'My Address',
+                  icon: IconlyLight.profile,
+                  onPressed: () {},
+                  color: color,
+                ),
+                _listTiles(
+                  title: 'Orders',
+                  icon: IconlyLight.bag,
+                  onPressed: () {},
+                  color: color,
+                ),
+                _listTiles(
+                  title: 'Wishlist',
+                  icon: IconlyLight.heart,
+                  onPressed: () {},
+                  color: color,
+                ),
+                _listTiles(
+                  title: 'Viewed',
+                  icon: IconlyLight.show,
+                  onPressed: () {},
+                  color: color,
+                ),
+                _listTiles(
+                  title: 'Forget password',
+                  icon: IconlyLight.unlock,
+                  onPressed: () {},
+                  color: color,
+                ),
+                _listTiles(
+                  title: 'Logout',
+                  icon: IconlyLight.logout,
+                  onPressed: () {},
+                  color: color,
+                ),
+                SwitchListTile(
+                  secondary: Icon(themeState.getDarkTheme
+                      ? Icons.dark_mode_outlined
+                      : Icons.light_mode_outlined),
+                  title: const Text(
+                    "Theme",
+                    style: TextStyle(
+                      // color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                  value: themeState.getDarkTheme,
+                  onChanged: (bool value) {
+                    setState(() {
+                      themeState.setDarkTheme = value;
+                    });
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),
