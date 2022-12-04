@@ -23,7 +23,7 @@ class TextWidget extends StatelessWidget {
       style: TextStyle(
         color: color,
         fontSize: textSize,
-        fontWeight: FontWeight.bold,
+        fontWeight: isTitle ? FontWeight.bold : FontWeight.normal,
       ),
     );
   }
