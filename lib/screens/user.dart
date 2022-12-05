@@ -69,11 +69,11 @@ class _UserScreenState extends State<UserScreen> {
                   height: 15,
                 ),
                 _listTiles(
+                  color: color,
                   title: 'Address',
                   subtitle: 'My Address',
                   icon: IconlyLight.profile,
                   onPressed: () {},
-                  color: color,
                 ),
                 _listTiles(
                   title: 'Orders',
