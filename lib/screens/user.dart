@@ -13,6 +13,14 @@ class UserScreen extends StatefulWidget {
 }
 
 class _UserScreenState extends State<UserScreen> {
+  final TextEditingController _addressTextController =
+      TextEditingController(text: "");
+  @override
+  void dispose() {
+    _addressTextController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final themeState = Provider.of<DarkThemeProvider>(context);
@@ -77,7 +85,14 @@ class _UserScreenState extends State<UserScreen> {
                     await showDialog(
                         context: context,
                         builder: (BuildContext context) {
-                          return const AlertDialog();
+                          return AlertDialog(
+                            content: TextField(
+                              controller: _addressTextController,
+                              maxLines: 5,
+                              decoration: const InputDecoration(
+                                  hintText: "Your address"),
+                            ),
+                          );
                         });
                   },
                 ),
