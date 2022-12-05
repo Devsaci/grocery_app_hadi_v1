@@ -87,6 +87,7 @@ class _UserScreenState extends State<UserScreen> {
                         builder: (BuildContext context) {
                           return AlertDialog(
                             content: TextField(
+                              onChanged: (value) {},
                               controller: _addressTextController,
                               maxLines: 5,
                               decoration: const InputDecoration(
