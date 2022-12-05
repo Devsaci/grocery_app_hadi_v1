@@ -73,7 +73,13 @@ class _UserScreenState extends State<UserScreen> {
                   title: 'Address',
                   subtitle: 'My Address',
                   icon: IconlyLight.profile,
-                  onPressed: () {},
+                  onPressed: () async {
+                    await showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return const AlertDialog();
+                        });
+                  },
                 ),
                 _listTiles(
                   title: 'Orders',
