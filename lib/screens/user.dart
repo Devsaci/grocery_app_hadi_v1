@@ -84,8 +84,9 @@ class _UserScreenState extends State<UserScreen> {
                   onPressed: () async {
                     await showDialog(
                         context: context,
-                        builder: (BuildContext context) {
+                        builder: (context) {
                           return AlertDialog(
+                            title: const Text("Update"),
                             content: TextField(
                               onChanged: (value) {},
                               controller: _addressTextController,
