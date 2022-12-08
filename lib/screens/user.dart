@@ -111,7 +111,9 @@ class _UserScreenState extends State<UserScreen> {
                 _listTiles(
                   title: 'Orders',
                   icon: IconlyLight.bag,
-                  onPressed: () {},
+                  onPressed: () {
+                    _showAddressDialog();
+                  },
                   color: color,
                 ),
                 _listTiles(
@@ -171,9 +173,10 @@ class _UserScreenState extends State<UserScreen> {
           return AlertDialog(
             title: const Text('Update'),
             content: TextField(
-              // onChanged: (value) {
-              //   print('_addressTextController.text ${_addressTextController.text}');
-              // },
+              onChanged: (value) {
+                print(
+                    '_addressTextController.text ${_addressTextController.text}');
+              },
               controller: _addressTextController,
               maxLines: 5,
               decoration: const InputDecoration(hintText: "Your address"),
