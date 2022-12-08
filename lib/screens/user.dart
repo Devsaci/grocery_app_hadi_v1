@@ -111,9 +111,7 @@ class _UserScreenState extends State<UserScreen> {
                 _listTiles(
                   title: 'Orders',
                   icon: IconlyLight.bag,
-                  onPressed: () {
-                    _showAddressDialog();
-                  },
+                  onPressed: () {},
                   color: color,
                 ),
                 _listTiles(
