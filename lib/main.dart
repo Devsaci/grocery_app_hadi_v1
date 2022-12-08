@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:grocery_app_hadi_v1/const/theme_data.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/screens/btm_bar.dart';
+import 'package:grocery_app_hadi_v1/widgets/DialogExample.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -50,6 +51,7 @@ class _MyAppState extends State<MyApp> {
           title: 'Flutter Demo',
           theme: Styles.themeData(themeProvider.getDarkTheme, context),
           home: const BottomBarScreen(),
+          // home: const DialogExample(),
         );
       }),
     );

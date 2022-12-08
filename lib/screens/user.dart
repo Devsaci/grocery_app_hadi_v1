@@ -15,6 +15,7 @@ class UserScreen extends StatefulWidget {
 class _UserScreenState extends State<UserScreen> {
   final TextEditingController _addressTextController =
       TextEditingController(text: "");
+
   @override
   void dispose() {
     _addressTextController.dispose();
@@ -76,27 +77,36 @@ class _UserScreenState extends State<UserScreen> {
                 const SizedBox(
                   height: 15,
                 ),
+                // _listTiles(
+                //   color: color,
+                //   title: 'Address',
+                //   subtitle: 'My Address',
+                //   icon: IconlyLight.profile,
+                //   onPressed: () async {
+                //     await showDialog(
+                //         context: context,
+                //         builder: (context) {
+                //           return AlertDialog(
+                //             title: const Text("Update"),
+                //             content: TextField(
+                //               onChanged: (value) {},
+                //               controller: _addressTextController,
+                //               maxLines: 5,
+                //               decoration: const InputDecoration(
+                //                   hintText: "Your address"),
+                //             ),
+                //           );
+                //         });
+                //   },
+                // ),
                 _listTiles(
-                  color: color,
-                  title: 'Address',
-                  subtitle: 'My Address',
+                  title: 'Address 2',
+                  subtitle: 'My subtitle',
                   icon: IconlyLight.profile,
                   onPressed: () async {
-                    await showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            title: const Text("Update"),
-                            content: TextField(
-                              onChanged: (value) {},
-                              controller: _addressTextController,
-                              maxLines: 5,
-                              decoration: const InputDecoration(
-                                  hintText: "Your address"),
-                            ),
-                          );
-                        });
+                    await _showAddressDialog();
                   },
+                  color: color,
                 ),
                 _listTiles(
                   title: 'Orders',
@@ -152,6 +162,30 @@ class _UserScreenState extends State<UserScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> _showAddressDialog() async {
+    await showDialog<void>(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: const Text('Update'),
+            content: TextField(
+              // onChanged: (value) {
+              //   print('_addressTextController.text ${_addressTextController.text}');
+              // },
+              controller: _addressTextController,
+              maxLines: 5,
+              decoration: const InputDecoration(hintText: "Your address"),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () {},
+                child: const Text('Update'),
+              ),
+            ],
+          );
+        });
   }
 
   Widget _listTiles({
