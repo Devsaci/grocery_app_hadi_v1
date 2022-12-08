@@ -142,6 +142,7 @@ class _UserScreenState extends State<UserScreen> {
     ));
   }
 
+// 19. Implement the logout dialog
   Future<void> _showAddressDialog() async {
     await showDialog(
         context: context,
