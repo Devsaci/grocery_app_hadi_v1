@@ -111,6 +111,15 @@ class _UserScreenState extends State<UserScreen> {
                 onPressed: () {},
                 color: color,
               ),
+
+              _listTiles(
+                title: 'Logout',
+                icon: IconlyLight.logout,
+                onPressed: () async {
+                  await _showLogoutDialog();
+                },
+                color: color,
+              ),
               SwitchListTile(
                 title: TextWidget(
                   text: themeState.getDarkTheme ? 'Dark mode' : 'Light mode',
@@ -128,12 +137,6 @@ class _UserScreenState extends State<UserScreen> {
                 },
                 value: themeState.getDarkTheme,
               ),
-              _listTiles(
-                title: 'Logout',
-                icon: IconlyLight.logout,
-                onPressed: () {},
-                color: color,
-              ),
               // listTileAsRow(),
             ],
           ),
@@ -148,8 +151,10 @@ class _UserScreenState extends State<UserScreen> {
     await showDialog(
         context: context,
         builder: (context) {
-          return const AlertDialog(
-            content: TextField(),
+          return AlertDialog(
+            title: Row(
+              children: const [Text("Logout")],
+            ),
           );
         });
   }
