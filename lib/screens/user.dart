@@ -148,7 +148,9 @@ class _UserScreenState extends State<UserScreen> {
     await showDialog(
         context: context,
         builder: (context) {
-          return AlertDialog();
+          return const AlertDialog(
+            content: TextField(),
+          );
         });
   }
 
