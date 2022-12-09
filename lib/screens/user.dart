@@ -153,7 +153,14 @@ class _UserScreenState extends State<UserScreen> {
         builder: (context) {
           return AlertDialog(
             title: Row(
-              children: const [Text("Logout")],
+              children: [
+                Image.asset(
+                  'assets/images/warning-sign.png',
+                  height: 20,
+                  width: 20,
+                ),
+                const Text("Logout"),
+              ],
             ),
           );
         });
