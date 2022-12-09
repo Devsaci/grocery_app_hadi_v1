@@ -166,6 +166,25 @@ class _UserScreenState extends State<UserScreen> {
                 const Text("Logout"),
               ],
             ),
+            content: const Text("Do you want sign out ?"),
+            actions: [
+              TextButton(
+                onPressed: () {},
+                child: TextWidget(
+                  text: "Cancel",
+                  color: Colors.cyan,
+                  textSize: 20,
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: TextWidget(
+                  text: "OK",
+                  color: Colors.red,
+                  textSize: 20,
+                ),
+              ),
+            ],
           );
         });
   }
