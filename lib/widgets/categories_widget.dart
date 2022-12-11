@@ -5,7 +5,7 @@ class CategoriesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MediaQuery.of(context).size.width;
+    double _screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
       decoration: BoxDecoration(
@@ -17,7 +17,11 @@ class CategoriesWidget extends StatelessWidget {
         ),
       ),
       child: Column(
-        children: [],
+        children: [
+          Container(
+            height: _screenWidth * 0.3,
+          ),
+        ],
       ),
     );
   }
