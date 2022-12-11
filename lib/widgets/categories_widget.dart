@@ -8,8 +8,8 @@ class CategoriesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double _screenWidth = MediaQuery.of(context).size.width;
     final themeState = Provider.of<DarkThemeProvider>(context);
+    double _screenWidth = MediaQuery.of(context).size.width;
     final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
     return Container(
       decoration: BoxDecoration(
