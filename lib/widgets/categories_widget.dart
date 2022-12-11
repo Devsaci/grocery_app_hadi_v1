@@ -8,6 +8,7 @@ class CategoriesWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.red.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(16),
       ),
     );
   }
