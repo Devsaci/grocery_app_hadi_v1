@@ -21,6 +21,8 @@ class CategoriesWidget extends StatelessWidget {
           Container(
             height: _screenWidth * 0.3,
             width: _screenWidth * 0.3,
+            decoration: const BoxDecoration(
+                image: DecorationImage(image: AssetImage('assetName'))),
           ),
         ],
       ),
