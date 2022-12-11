@@ -14,6 +14,9 @@ class CategoriesWidget extends StatelessWidget {
           width: 2,
         ),
       ),
+      child: Column(
+        children: [],
+      ),
     );
   }
 }
