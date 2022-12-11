@@ -170,7 +170,9 @@ class _UserScreenState extends State<UserScreen> {
             actions: [
               TextButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  if (Navigator.canPop(context)) {
+                    Navigator.pop(context);
+                  }
                 },
                 child: TextWidget(
                   text: "Cancel",
