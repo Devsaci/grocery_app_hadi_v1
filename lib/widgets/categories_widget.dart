@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import 'package:provider/provider.dart';
 
 class CategoriesWidget extends StatelessWidget {
   const CategoriesWidget({Key? key}) : super(key: key);
@@ -6,7 +9,8 @@ class CategoriesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
-
+    final themeState = Provider.of<DarkThemeProvider>(context);
+    final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
     return Container(
       decoration: BoxDecoration(
         color: Colors.red.withOpacity(0.1),
@@ -30,6 +34,11 @@ class CategoriesWidget extends StatelessWidget {
               ),
             ),
           ),
+          TextWidget(
+            text: 'Category name',
+            color: color,
+            textSize: 20,
+          )
         ],
       ),
     );
