@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/widgets/categories_widget.dart';
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({super.key});
@@ -10,14 +11,9 @@ class CategoriesScreen extends StatefulWidget {
 class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       // backgroundColor: Colors.black,
-      body: Center(
-        child: Title(
-          color: Colors.yellowAccent,
-          child: const Text("CategoriesScreen"),
-        ),
-      ),
+      body: Center(child: CategoriesWidget()),
     );
   }
 }
