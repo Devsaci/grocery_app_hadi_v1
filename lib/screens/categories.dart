@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/widgets/categories_widget.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
+import 'package:provider/provider.dart';
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({super.key});
@@ -11,8 +14,18 @@ class CategoriesScreen extends StatefulWidget {
 class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
+    final themeState = Provider.of<DarkThemeProvider>(context);
+    final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
     return Scaffold(
       //21. Finish building the category screen
+      appBar: AppBar(
+        elevation: 0,
+        title: TextWidget(
+          text: "Categories",
+          color: color,
+          textSize: 24,
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GridView.count(
