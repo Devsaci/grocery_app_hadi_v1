@@ -16,6 +16,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       body: GridView.count(
         crossAxisCount: 2,
         childAspectRatio: 240 / 250,
+        crossAxisSpacing: 10, // Vertical
         children: [
           CategoriesWidget(),
           CategoriesWidget(),
