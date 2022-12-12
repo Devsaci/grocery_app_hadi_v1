@@ -17,6 +17,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         crossAxisCount: 2,
         childAspectRatio: 240 / 250,
         crossAxisSpacing: 10, // Vertical
+        mainAxisSpacing: 10, // Horizontal
         children: List.generate(6, (index) => CategoriesWidget()),
       ),
     );
