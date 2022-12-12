@@ -13,12 +13,15 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       //21. Finish building the category screen
-      body: GridView.count(
-        crossAxisCount: 2,
-        childAspectRatio: 240 / 250,
-        crossAxisSpacing: 10, // Vertical
-        mainAxisSpacing: 10, // Horizontal
-        children: List.generate(6, (index) => CategoriesWidget()),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 240 / 250,
+          crossAxisSpacing: 10, // Vertical
+          mainAxisSpacing: 10, // Horizontal
+          children: List.generate(6, (index) => CategoriesWidget()),
+        ),
       ),
     );
   }
