@@ -15,7 +15,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
     final themeState = Provider.of<DarkThemeProvider>(context);
-    final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
+    final Color color = themeState.getDarkTheme ? Colors.black : Colors.white;
     return Scaffold(
       //21. Finish building the category screen
       appBar: AppBar(
