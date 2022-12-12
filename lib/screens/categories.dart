@@ -23,6 +23,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     return Scaffold(
       //21. Finish building the category screen
       appBar: AppBar(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         elevation: 0,
         title: TextWidget(
           text: "Categories",
