@@ -11,35 +11,41 @@ class CategoriesWidget extends StatelessWidget {
     final themeState = Provider.of<DarkThemeProvider>(context);
     double _screenWidth = MediaQuery.of(context).size.width;
     final Color color = themeState.getDarkTheme ? Colors.white : Colors.black;
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.red.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: Colors.red.withOpacity(0.7),
-          width: 2,
+    return InkWell(
+      onTap: () {
+        print("Category Pressed");
+      },
+      child: Container(
+        // height: _screenWidth * 1.0,
+        decoration: BoxDecoration(
+          color: Colors.red.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: Colors.red.withOpacity(0.7),
+            width: 2,
+          ),
         ),
-      ),
-      child: Column(
-        children: [
-          Container(
-            height: _screenWidth * 0.3,
-            width: _screenWidth * 0.3,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  'assets/images/cat/veg.png',
+        child: Column(
+          children: [
+            Container(
+              height: _screenWidth * 0.3,
+              width: _screenWidth * 0.3,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    'assets/images/cat/veg.png',
+                  ),
+                  fit: BoxFit.fill,
                 ),
-                fit: BoxFit.fill,
               ),
             ),
-          ),
-          TextWidget(
-            text: 'Category name',
-            color: color,
-            textSize: 20,
-          )
-        ],
+            TextWidget(
+              text: 'Category name',
+              color: color,
+              textSize: 20,
+            )
+          ],
+        ),
       ),
     );
   }
