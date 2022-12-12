@@ -15,6 +15,27 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       //21. Finish building the category screen
       body: GridView.count(
         crossAxisCount: 2,
+        childAspectRatio: 240 / 250,
+        children: [
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+          CategoriesWidget(),
+        ],
       ),
     );
   }
