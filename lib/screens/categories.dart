@@ -6,7 +6,12 @@ import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 class CategoriesScreen extends StatefulWidget {
   CategoriesScreen({Key? key}) : super(key: key);
 
-  List catInfo = [];
+  List<Map<String, dynamic>> catInfo = [
+    {
+      'imgPath': 'assets/images/cat/fruits.png',
+      'catText': 'Fruits',
+    },
+  ];
 
   @override
   State<CategoriesScreen> createState() => _CategoriesScreenState();
