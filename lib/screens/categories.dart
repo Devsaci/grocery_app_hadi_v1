@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/categories_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
-import 'package:provider/provider.dart';
 
 class CategoriesScreen extends StatefulWidget {
-  const CategoriesScreen({super.key});
+  CategoriesScreen({Key? key}) : super(key: key);
 
   @override
   State<CategoriesScreen> createState() => _CategoriesScreenState();
