@@ -6,6 +6,8 @@ import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 class CategoriesScreen extends StatefulWidget {
   CategoriesScreen({Key? key}) : super(key: key);
 
+  List catInfo = [];
+
   @override
   State<CategoriesScreen> createState() => _CategoriesScreenState();
 }
