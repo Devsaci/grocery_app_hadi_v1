@@ -60,7 +60,7 @@ class CategoriesScreen extends StatelessWidget {
           mainAxisSpacing: 10, // Horizontal
           children: List.generate(6, (index) {
             return CategoriesWidget(
-              catText: catInfo[index][''],
+              catText: catInfo[index]['catText'],
               imgPath: '',
               passedColor: color,
             );
