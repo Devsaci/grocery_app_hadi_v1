@@ -19,6 +19,10 @@ class CategoriesScreen extends StatefulWidget {
       'imgPath': 'assets/images/cat/Spinach.png',
       'catText': 'Herbs',
     },
+    {
+      'imgPath': 'assets/images/cat/nuts.png',
+      'catText': 'Nuts',
+    },
   ];
 
   @override
