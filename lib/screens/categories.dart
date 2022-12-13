@@ -61,7 +61,7 @@ class CategoriesScreen extends StatelessWidget {
           children: List.generate(6, (index) {
             return CategoriesWidget(
               catText: catInfo[index]['catText'],
-              imgPath: '',
+              imgPath: catInfo[index]['imgPath'],
               passedColor: color,
             );
           }),
