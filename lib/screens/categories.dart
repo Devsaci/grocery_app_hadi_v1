@@ -3,7 +3,7 @@ import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/categories_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
-class CategoriesScreen extends StatefulWidget {
+class CategoriesScreen extends StatelessWidget {
   CategoriesScreen({Key? key}) : super(key: key);
 
   List<Map<String, dynamic>> catInfo = [
@@ -34,11 +34,6 @@ class CategoriesScreen extends StatefulWidget {
   ];
 
   @override
-  State<CategoriesScreen> createState() => _CategoriesScreenState();
-}
-
-class _CategoriesScreenState extends State<CategoriesScreen> {
-  @override
   Widget build(BuildContext context) {
     // final themeState = Provider.of<DarkThemeProvider>(context);
     // final Color color = themeState.getDarkTheme ? Colors.black : Colors.white;
@@ -63,13 +58,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
           childAspectRatio: 240 / 250,
           crossAxisSpacing: 10, // Vertical
           mainAxisSpacing: 10, // Horizontal
-          children: List.generate(
-              6,
-              (index) => CategoriesWidget(
-                    catText: '',
-                    imgPath: '',
-                    passedColor: color,
-                  )),
+          children: List.generate(6, (index) {
+            return CategoriesWidget(
+              catText: catInfo[index][''],
+              imgPath: '',
+              passedColor: color,
+            );
+          }),
         ),
       ),
     );
