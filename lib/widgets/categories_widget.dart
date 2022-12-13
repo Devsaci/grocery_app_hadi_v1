@@ -48,7 +48,7 @@ class CategoriesWidget extends StatelessWidget {
               ),
             ),
             TextWidget(
-              text: 'Category name',
+              text: catText,
               color: color,
               textSize: 20,
             )
