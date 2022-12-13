@@ -26,10 +26,10 @@ class CategoriesWidget extends StatelessWidget {
       child: Container(
         // height: _screenWidth * 1.0,
         decoration: BoxDecoration(
-          color: Colors.red.withOpacity(0.1),
+          color: passedColor.withOpacity(0.5),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: color.withOpacity(0.7),
+            color: passedColor.withOpacity(0.9),
             width: 2,
           ),
         ),

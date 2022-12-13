@@ -71,7 +71,7 @@ class CategoriesScreen extends StatelessWidget {
             return CategoriesWidget(
               catText: catInfo[index]['catText'],
               imgPath: catInfo[index]['imgPath'],
-              passedColor: Colors.amber,
+              passedColor: gridColors[index],
             );
           }),
         ),
