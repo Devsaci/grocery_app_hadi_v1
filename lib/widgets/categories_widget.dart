@@ -38,10 +38,10 @@ class CategoriesWidget extends StatelessWidget {
             Container(
               height: _screenWidth * 0.3,
               width: _screenWidth * 0.3,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
-                    'assets/images/cat/veg.png',
+                    imgPath,
                   ),
                   fit: BoxFit.fill,
                 ),
