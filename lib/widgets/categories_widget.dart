@@ -4,10 +4,15 @@ import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 import 'package:provider/provider.dart';
 
 class CategoriesWidget extends StatelessWidget {
-  CategoriesWidget({Key? key, required this.catText, required this.imgPath})
-      : super(key: key);
+  CategoriesWidget({
+    Key? key,
+    required this.catText,
+    required this.imgPath,
+    required this.passedColor,
+  }) : super(key: key);
 
   final String catText, imgPath;
+  final Color passedColor;
 
   @override
   Widget build(BuildContext context) {
