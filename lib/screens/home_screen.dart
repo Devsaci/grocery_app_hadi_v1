@@ -1,3 +1,4 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:provider/provider.dart';
@@ -17,24 +18,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       body: Center(
-          child: SwitchListTile(
-        secondary: Icon(themeState.getDarkTheme
-            ? Icons.dark_mode_outlined
-            : Icons.light_mode_outlined),
-        title: const Text(
-          "Theme",
-          style: TextStyle(
-            // color: Colors.black,
-            fontSize: 20,
-          ),
+        child: Swiper(
+          itemCount: 4,
         ),
-        value: themeState.getDarkTheme,
-        onChanged: (bool value) {
-          setState(() {
-            themeState.setDarkTheme = value;
-          });
-        },
-      )),
+      ),
     );
   }
 }
