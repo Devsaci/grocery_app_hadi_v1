@@ -26,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Center(
         child: Swiper(
+          autoplay: true,
           itemCount: _offerImages.length,
           itemBuilder: (BuildContext context, index) {
             return Image.asset(
@@ -40,6 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
               activeColor: Colors.red,
             ),
           ),
+          control: const SwiperControl(color: Colors.black),
         ),
       ),
     );
