@@ -24,10 +24,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final themeState = Provider.of<DarkThemeProvider>(context);
     final Utils utils = Utils(context);
-
+    Size size = utils.getScreenSize;
     return Scaffold(
       body: SizedBox(
-        //height: ,
         child: Swiper(
           autoplay: true,
           itemCount: _offerImages.length,
