@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       body: SizedBox(
-        height: ,
+        //height: ,
         child: Swiper(
           autoplay: true,
           itemCount: _offerImages.length,
