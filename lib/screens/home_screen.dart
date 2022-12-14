@@ -1,6 +1,7 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
+import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,9 +23,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final themeState = Provider.of<DarkThemeProvider>(context);
+    final Utils utils = Utils(context);
 
     return Scaffold(
-      body: Center(
+      body: SizedBox(
+        height: ,
         child: Swiper(
           autoplay: true,
           itemCount: _offerImages.length,
