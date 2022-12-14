@@ -27,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Size size = utils.getScreenSize;
     return Scaffold(
       body: SizedBox(
+        height: size.height * 0.33,
         child: Swiper(
           autoplay: true,
           itemCount: _offerImages.length,
