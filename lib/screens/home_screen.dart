@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
               activeColor: Colors.red,
             ),
           ),
-          control: const SwiperControl(color: Colors.black),
+          //control: const SwiperControl(color: Colors.black),
         ),
       ),
     );
