@@ -22,8 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
   //
   @override
   Widget build(BuildContext context) {
-    final themeState = Provider.of<DarkThemeProvider>(context);
     final Utils utils = Utils(context);
+    final themeState = utils.getTheme;
     Size size = utils.getScreenSize;
     return Scaffold(
       body: SizedBox(
