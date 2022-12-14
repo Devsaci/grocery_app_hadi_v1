@@ -35,6 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           pagination: const SwiperPagination(
             alignment: Alignment.bottomCenter,
+            builder: DotSwiperPaginationBuilder(),
           ),
         ),
       ),
