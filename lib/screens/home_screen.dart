@@ -33,7 +33,9 @@ class _HomeScreenState extends State<HomeScreen> {
               fit: BoxFit.fill,
             );
           },
-          pagination: SwiperPagination(),
+          pagination: const SwiperPagination(
+            alignment: Alignment.bottomCenter,
+          ),
         ),
       ),
     );
