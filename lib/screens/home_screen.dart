@@ -20,6 +20,12 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: Swiper(
           itemCount: 4,
+          itemBuilder: (BuildContext context, index) {
+            return Image.asset(
+              "assets/images/offres/Offer1.jpg",
+              fit: BoxFit.fill,
+            );
+          },
         ),
       ),
     );
