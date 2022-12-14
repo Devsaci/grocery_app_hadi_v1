@@ -11,6 +11,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final List<String> _offerImages = [];
+
   //
   @override
   Widget build(BuildContext context) {
