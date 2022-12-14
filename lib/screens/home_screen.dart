@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Center(
         child: Swiper(
-          itemCount: 4,
+          itemCount: _offerImages.length,
           itemBuilder: (BuildContext context, index) {
             return Image.asset(
               _offerImages[index],
