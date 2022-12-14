@@ -4,7 +4,7 @@ import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 import 'package:provider/provider.dart';
 
 class CategoriesWidget extends StatelessWidget {
-  CategoriesWidget({
+  const CategoriesWidget({
     Key? key,
     required this.catText,
     required this.imgPath,
