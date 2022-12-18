@@ -21,7 +21,12 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: () {},
-        child: Column(),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [],
+          ),
+        ),
       ),
     );
   }
