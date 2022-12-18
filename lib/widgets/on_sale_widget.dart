@@ -1,6 +1,7 @@
 //23. Implement the sale widget
 
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
@@ -47,6 +48,11 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                     children: [
                       GestureDetector(
                         onTap: () {},
+                        child: Icon(
+                          IconlyLight.bag2,
+                          size: 22,
+                          color: color,
+                        ),
                       ),
                     ],
                   ),
