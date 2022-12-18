@@ -18,7 +18,9 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
     return Material(
       color: Theme.of(context).cardColor.withOpacity(0.9),
       borderRadius: BorderRadius.circular(12),
-      child: InkWell(),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+      ),
     );
   }
 }
