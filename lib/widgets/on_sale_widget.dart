@@ -40,6 +40,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                     text: '1KG',
                     color: color,
                     textSize: 22,
+                    isTitle: true,
                   ),
                 ],
               )
