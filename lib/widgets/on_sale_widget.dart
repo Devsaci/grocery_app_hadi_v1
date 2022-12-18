@@ -37,27 +37,41 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                     height: size.width * 0.33,
                     // fit: BoxFit.cover,
                   ),
-                  TextWidget(
-                    text: '1KG',
-                    color: color,
-                    textSize: 22,
-                    isTitle: true,
-                  ),
-                  const SizedBox(height: 6),
-                  Row(
+                  Column(
                     children: [
-                      GestureDetector(
-                        onTap: () {},
-                        child: Icon(
-                          IconlyLight.bag2,
-                          size: 22,
-                          color: color,
-                        ),
+                      TextWidget(
+                        text: '1KG',
+                        color: color,
+                        textSize: 22,
+                        isTitle: true,
+                      ),
+                      Row(
+                        children: [
+                          GestureDetector(
+                            onTap: () {},
+                            child: Icon(
+                              IconlyLight.bag2,
+                              size: 22,
+                              color: color,
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              print('print heart button is pressed');
+                            },
+                            child: Icon(
+                              IconlyLight.heart,
+                              size: 22,
+                              color: color,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
+                  const SizedBox(height: 6),
                 ],
-              )
+              ),
             ],
           ),
         ),
