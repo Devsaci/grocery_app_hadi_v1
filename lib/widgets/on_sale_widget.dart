@@ -20,6 +20,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
       borderRadius: BorderRadius.circular(12),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
+        onTap: () {},
       ),
     );
   }
