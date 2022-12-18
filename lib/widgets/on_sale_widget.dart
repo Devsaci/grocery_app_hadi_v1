@@ -13,7 +13,7 @@ class OnSaleWidget extends StatefulWidget {
 class _OnSaleWidgetState extends State<OnSaleWidget> {
   @override
   Widget build(BuildContext context) {
-    Utils(context).getTheme;
+    final theme = Utils(context).getTheme;
     Size size = Utils(context).getScreenSize;
     return Container();
   }
