@@ -11,10 +11,9 @@ class OnSaleWidget extends StatefulWidget {
 }
 
 class _OnSaleWidgetState extends State<OnSaleWidget> {
-  // Utils(context).getScreenSize;
   @override
   Widget build(BuildContext context) {
-    Utils(context).getScreenSize;
+    Size size = Utils(context).getScreenSize;
     return Container();
   }
 }
