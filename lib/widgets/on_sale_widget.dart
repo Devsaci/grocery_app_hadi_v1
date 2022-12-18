@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
+import 'package:grocery_app_hadi_v1/widgets/price_widget.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class OnSaleWidget extends StatefulWidget {
@@ -72,6 +73,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                   const SizedBox(height: 6),
                 ],
               ),
+              const PriceWidget(),
             ],
           ),
         ),
