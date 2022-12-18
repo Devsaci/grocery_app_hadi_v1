@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class OnSaleWidget extends StatefulWidget {
-  const OnSaleWidget({super.key});
+  const OnSaleWidget({Key? key}) : super(key: key);
 
   @override
   State<OnSaleWidget> createState() => _OnSaleWidgetState();
