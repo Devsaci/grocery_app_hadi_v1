@@ -43,6 +43,9 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                     isTitle: true,
                   ),
                   const SizedBox(height: 6),
+                  Row(
+                    children: [],
+                  ),
                 ],
               )
             ],
