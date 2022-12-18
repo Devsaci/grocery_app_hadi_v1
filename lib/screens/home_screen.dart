@@ -2,6 +2,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
+import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -26,26 +27,31 @@ class _HomeScreenState extends State<HomeScreen> {
     final themeState = utils.getTheme;
     Size size = utils.getScreenSize;
     return Scaffold(
-      body: SizedBox(
-        height: size.height * 0.33,
-        child: Swiper(
-          autoplay: true,
-          itemCount: _offerImages.length,
-          itemBuilder: (BuildContext context, index) {
-            return Image.asset(
-              _offerImages[index],
-              fit: BoxFit.fill,
-            );
-          },
-          pagination: const SwiperPagination(
-            alignment: Alignment.bottomCenter,
-            builder: DotSwiperPaginationBuilder(
-              color: Colors.white,
-              activeColor: Colors.red,
+      body: Column(
+        children: [
+          SizedBox(
+            height: size.height * 0.33,
+            child: Swiper(
+              autoplay: true,
+              itemCount: _offerImages.length,
+              itemBuilder: (BuildContext context, index) {
+                return Image.asset(
+                  _offerImages[index],
+                  fit: BoxFit.fill,
+                );
+              },
+              pagination: const SwiperPagination(
+                alignment: Alignment.bottomCenter,
+                builder: DotSwiperPaginationBuilder(
+                  color: Colors.white,
+                  activeColor: Colors.red,
+                ),
+              ),
+              //control: const SwiperControl(color: Colors.black),
             ),
           ),
-          //control: const SwiperControl(color: Colors.black),
-        ),
+          OnSaleWidget(),
+        ],
       ),
     );
   }

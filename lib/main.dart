@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
         return MaterialApp(
           title: 'Flutter Demo',
           theme: Styles.themeData(themeProvider.getDarkTheme, context),
-          home: OnSaleWidget(),
+          home: HomeScreen(),
           // home: const DialogExample(),
         );
       }),
