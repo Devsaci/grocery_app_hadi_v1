@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
+import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class OnSaleWidget extends StatefulWidget {
   const OnSaleWidget({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class OnSaleWidget extends StatefulWidget {
 class _OnSaleWidgetState extends State<OnSaleWidget> {
   @override
   Widget build(BuildContext context) {
+    final Color color = Utils(context).color;
     final theme = Utils(context).getTheme;
     Size size = Utils(context).getScreenSize;
     return Material(
@@ -34,9 +36,11 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                     height: size.width * 0.33,
                     // fit: BoxFit.cover,
                   ),
-                  Column(
-                    children: [],
-                  )
+                  TextWidget(
+                    text: '1KG',
+                    color: color,
+                    textSize: 22,
+                  ),
                 ],
               )
             ],
