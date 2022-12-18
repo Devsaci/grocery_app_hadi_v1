@@ -44,7 +44,9 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                   ),
                   const SizedBox(height: 6),
                   Row(
-                    children: [],
+                    children: [
+                      GestureDetector(),
+                    ],
                   ),
                 ],
               )
