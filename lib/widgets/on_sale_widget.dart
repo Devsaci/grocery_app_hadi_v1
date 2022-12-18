@@ -24,7 +24,19 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-            children: [],
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Image.network(
+                    'https://i.ibb.co/F0s3FHQ/Apricots.png',
+                    width: size.width * 0.55,
+                    height: size.width * 0.5,
+                    fit: BoxFit.fill,
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ),
