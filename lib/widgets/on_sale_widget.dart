@@ -15,6 +15,10 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
   Widget build(BuildContext context) {
     final theme = Utils(context).getTheme;
     Size size = Utils(context).getScreenSize;
-    return Material();
+    return Material(
+      color: Theme.of(context).cardColor.withOpacity(0.9),
+      borderRadius: BorderRadius.circular(12),
+      child: InkWell(),
+    );
   }
 }

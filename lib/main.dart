@@ -5,6 +5,7 @@ import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/screens/btm_bar.dart';
 import 'package:grocery_app_hadi_v1/screens/home_screen.dart';
 import 'package:grocery_app_hadi_v1/widgets/DialogExample.dart';
+import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -51,7 +52,7 @@ class _MyAppState extends State<MyApp> {
         return MaterialApp(
           title: 'Flutter Demo',
           theme: Styles.themeData(themeProvider.getDarkTheme, context),
-          home: HomeScreen(),
+          home: OnSaleWidget(),
           // home: const DialogExample(),
         );
       }),
