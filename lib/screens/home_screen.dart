@@ -51,6 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
               //control: const SwiperControl(color: Colors.black),
             ),
           ),
+          const SizedBox(height: 6),
           TextButton(
             onPressed: () {},
             child: TextWidget(
@@ -60,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
               textSize: 20,
             ),
           ),
+          const SizedBox(height: 6),
           SizedBox(
             height: size.height * 0.24,
             child: ListView.builder(
