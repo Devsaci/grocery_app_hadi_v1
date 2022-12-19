@@ -50,7 +50,11 @@ class _HomeScreenState extends State<HomeScreen> {
               //control: const SwiperControl(color: Colors.black),
             ),
           ),
-          OnSaleWidget(),
+          ListView.builder(
+            itemBuilder: (BuildContext context, int index) {
+              return OnSaleWidget();
+            },
+          ),
         ],
       ),
     );
