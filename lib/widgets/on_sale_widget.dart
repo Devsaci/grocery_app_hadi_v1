@@ -36,8 +36,8 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                 children: [
                   Image.network(
                     'https://i.ibb.co/F0s3FHQ/Apricots.png',
-                    width: size.width * 0.33,
-                    height: size.width * 0.33,
+                    //width: size.width * 0.33,
+                    height: size.width * 0.22,
                     // fit: BoxFit.cover,
                   ),
                   Column(
