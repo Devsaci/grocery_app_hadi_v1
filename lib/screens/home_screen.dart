@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/provider/dark_theme_provider.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
@@ -69,6 +70,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: Colors.red,
                 textSize: 22,
                 isTitle: true,
+              ),
+              const Icon(
+                IconlyLight.discount,
+                color: Colors.red,
               ),
               Flexible(
                 child: SizedBox(
