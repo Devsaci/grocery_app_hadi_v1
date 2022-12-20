@@ -64,6 +64,12 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 6),
           Row(
             children: [
+              TextWidget(
+                text: 'On sale'.toUpperCase(),
+                color: Colors.red,
+                textSize: 22,
+                isTitle: true,
+              ),
               Flexible(
                 child: SizedBox(
                   height: size.height * 0.24,
