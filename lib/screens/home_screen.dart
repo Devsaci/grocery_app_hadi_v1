@@ -64,14 +64,16 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 6),
           Row(
             children: [
-              SizedBox(
-                height: size.height * 0.24,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (BuildContext context, int index) {
-                    return OnSaleWidget();
-                  },
-                  itemCount: 6,
+              Flexible(
+                child: SizedBox(
+                  height: size.height * 0.24,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (BuildContext context, int index) {
+                      return OnSaleWidget();
+                    },
+                    itemCount: 6,
+                  ),
                 ),
               ),
             ],
