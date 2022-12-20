@@ -71,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 textSize: 22,
                 isTitle: true,
               ),
+              const SizedBox(width: 5),
               const Icon(
                 IconlyLight.discount,
                 color: Colors.red,
