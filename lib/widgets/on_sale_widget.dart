@@ -1,5 +1,6 @@
 //23. Implement the sale widget
 
+import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
@@ -36,11 +37,11 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.network(
-                      'https://i.ibb.co/F0s3FHQ/Apricots.png',
-                      //width: size.width * 0.33,
+                    FancyShimmerImage(
+                      imageUrl: "https://i.ibb.co/F0s3FHQ/Apricots.png",
                       height: size.width * 0.22,
-                      // fit: BoxFit.cover,
+                      width: size.width * 0.22,
+                      boxFit: BoxFit.fill,
                     ),
                     Column(
                       children: [
