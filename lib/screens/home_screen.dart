@@ -100,24 +100,28 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           const SizedBox(height: 10),
-          Row(
-            children: [
-              TextWidget(
-                text: "Our Product",
-                color: color,
-                textSize: 22,
-                isTitle: true,
-              ),
-              TextButton(
-                onPressed: () {},
-                child: TextWidget(
-                  text: 'Browse  all',
-                  maxLines: 1,
-                  color: Colors.blue,
-                  textSize: 20,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                TextWidget(
+                  text: "Our Product",
+                  color: color,
+                  textSize: 22,
+                  isTitle: true,
                 ),
-              ),
-            ],
+                const Spacer(),
+                TextButton(
+                  onPressed: () {},
+                  child: TextWidget(
+                    text: 'Browse  all',
+                    maxLines: 1,
+                    color: Colors.blue,
+                    textSize: 20,
+                  ),
+                ),
+              ],
+            ),
           )
         ],
       ),
