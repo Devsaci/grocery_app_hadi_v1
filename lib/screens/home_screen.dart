@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (BuildContext context, int index) {
-                      return OnSaleWidget();
+                      return const OnSaleWidget();
                     },
                     itemCount: 6,
                   ),
