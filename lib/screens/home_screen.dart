@@ -27,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final Utils utils = Utils(context);
     final themeState = utils.getTheme;
+    final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
     return Scaffold(
       body: Column(
@@ -98,6 +99,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              TextWidget(
+                text: "Our Product",
+                color: color,
+                textSize: 22,
+                isTitle: true,
+              ),
+            ],
+          )
         ],
       ),
     );
