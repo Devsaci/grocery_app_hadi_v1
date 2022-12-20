@@ -108,6 +108,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 textSize: 22,
                 isTitle: true,
               ),
+              TextButton(
+                onPressed: () {},
+                child: TextWidget(
+                  text: 'Browse  all',
+                  maxLines: 1,
+                  color: Colors.blue,
+                  textSize: 20,
+                ),
+              ),
             ],
           )
         ],
