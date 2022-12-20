@@ -103,6 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextWidget(
                   text: "Our Product",
@@ -110,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   textSize: 22,
                   isTitle: true,
                 ),
-                const Spacer(),
+                // const Spacer(),
                 TextButton(
                   onPressed: () {},
                   child: TextWidget(
