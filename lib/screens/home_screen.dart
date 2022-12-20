@@ -83,6 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
+              const SizedBox(width: 8),
               Flexible(
                 child: SizedBox(
                   height: size.height * 0.24,
