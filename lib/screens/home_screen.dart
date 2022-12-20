@@ -65,16 +65,20 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 6),
           Row(
             children: [
-              TextWidget(
-                text: 'On sale'.toUpperCase(),
-                color: Colors.red,
-                textSize: 22,
-                isTitle: true,
-              ),
-              const SizedBox(width: 5),
-              const Icon(
-                IconlyLight.discount,
-                color: Colors.red,
+              Row(
+                children: [
+                  TextWidget(
+                    text: 'On sale'.toUpperCase(),
+                    color: Colors.red,
+                    textSize: 22,
+                    isTitle: true,
+                  ),
+                  const SizedBox(width: 5),
+                  const Icon(
+                    IconlyLight.discount,
+                    color: Colors.red,
+                  ),
+                ],
               ),
               Flexible(
                 child: SizedBox(
