@@ -18,6 +18,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
       color: Theme.of(context).cardColor,
       child: InkWell(
         onTap: () {},
+        borderRadius: BorderRadius.circular(12),
       ),
     );
   }
