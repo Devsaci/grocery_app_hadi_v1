@@ -13,8 +13,10 @@ class FeedsWidget extends StatefulWidget {
 class _FeedsWidgetState extends State<FeedsWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Material(
-      child: InkWell(),
+    return Material(
+      child: InkWell(
+        onTap: () {},
+      ),
     );
   }
 }
