@@ -14,6 +14,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Theme.of(context).cardColor,
       child: InkWell(
         onTap: () {},
       ),
