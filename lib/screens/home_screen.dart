@@ -124,7 +124,10 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          FeedsWidget(),
+          // FeedsWidget(),
+          GridView.count(
+            crossAxisCount: 2,
+          )
         ],
       ),
     );
