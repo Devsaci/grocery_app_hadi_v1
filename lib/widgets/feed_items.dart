@@ -13,6 +13,8 @@ class FeedsWidget extends StatefulWidget {
 class _FeedsWidgetState extends State<FeedsWidget> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Material(
+      child: InkWell(),
+    );
   }
 }
