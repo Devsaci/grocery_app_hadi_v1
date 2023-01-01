@@ -19,6 +19,9 @@ class _FeedsWidgetState extends State<FeedsWidget> {
       child: InkWell(
         onTap: () {},
         borderRadius: BorderRadius.circular(12),
+        child: Column(
+          children: [],
+        ),
       ),
     );
   }
