@@ -3,6 +3,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
+import 'package:grocery_app_hadi_v1/widgets/heart_btn.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class FeedsWidget extends StatefulWidget {
@@ -43,6 +44,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                       textSize: 20,
                       isTitle: true,
                     ),
+                    HeartBTN(),
                   ],
                 ),
               )
