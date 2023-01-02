@@ -37,6 +37,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextWidget(
                       text: 'Title',
