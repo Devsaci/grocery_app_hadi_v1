@@ -55,6 +55,16 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 child: Row(
                   children: [
                     const PriceWidget(),
+                    Row(
+                      children: [
+                        TextWidget(
+                          text: 'KG',
+                          color: color,
+                          textSize: 18,
+                          isTitle: true,
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
