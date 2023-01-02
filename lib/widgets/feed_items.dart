@@ -15,21 +15,24 @@ class _FeedsWidgetState extends State<FeedsWidget> {
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
-    return Material(
-      borderRadius: BorderRadius.circular(12),
-      color: Theme.of(context).cardColor,
-      child: InkWell(
-        onTap: () {},
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Material(
         borderRadius: BorderRadius.circular(12),
-        child: Column(
-          children: [
-            FancyShimmerImage(
-              imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
-              height: size.width * 0.21,
-              width: size.width * 0.2,
-              boxFit: BoxFit.fill,
-            )
-          ],
+        color: Theme.of(context).cardColor,
+        child: InkWell(
+          onTap: () {},
+          borderRadius: BorderRadius.circular(12),
+          child: Column(
+            children: [
+              FancyShimmerImage(
+                imageUrl: 'https://i.ibb.co/F0s3FHQ/Apricots.png',
+                height: size.width * 0.21,
+                width: size.width * 0.2,
+                boxFit: BoxFit.fill,
+              )
+            ],
+          ),
         ),
       ),
     );
