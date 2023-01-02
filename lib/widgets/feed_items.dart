@@ -53,17 +53,23 @@ class _FeedsWidgetState extends State<FeedsWidget> {
               Padding(
                 padding: const EdgeInsets.all(0.8),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const PriceWidget(),
-                    Row(
-                      children: [
-                        TextWidget(
-                          text: 'KG',
-                          color: color,
-                          textSize: 18,
-                          isTitle: true,
-                        ),
-                      ],
+                    // const SizedBox(width: 8),
+                    Flexible(
+                      child: Row(
+                        children: [
+                          FittedBox(
+                            child: TextWidget(
+                              text: 'KG',
+                              color: color,
+                              textSize: 18,
+                              isTitle: true,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
