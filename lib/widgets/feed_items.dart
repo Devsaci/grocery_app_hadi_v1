@@ -33,15 +33,18 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 width: size.width * 0.2,
                 boxFit: BoxFit.fill,
               ),
-              Row(
-                children: [
-                  TextWidget(
-                    text: 'Title',
-                    color: color,
-                    textSize: 20,
-                    isTitle: true,
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Row(
+                  children: [
+                    TextWidget(
+                      text: 'Title',
+                      color: color,
+                      textSize: 20,
+                      isTitle: true,
+                    ),
+                  ],
+                ),
               )
             ],
           ),
