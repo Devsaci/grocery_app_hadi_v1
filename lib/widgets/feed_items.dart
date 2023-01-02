@@ -37,6 +37,12 @@ class _FeedsWidgetState extends State<FeedsWidget> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Row(
+                  children: [],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextWidget(
@@ -48,7 +54,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                     HeartBTN(),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
