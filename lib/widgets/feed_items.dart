@@ -16,6 +16,13 @@ class FeedsWidget extends StatefulWidget {
 
 class _FeedsWidgetState extends State<FeedsWidget> {
   final _quantityTextController = TextEditingController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
