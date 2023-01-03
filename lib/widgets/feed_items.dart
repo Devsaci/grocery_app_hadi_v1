@@ -19,7 +19,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    _quantityTextController.text = '1';
     super.initState();
   }
 
