@@ -69,6 +69,8 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                               isTitle: true,
                             ),
                           ),
+                          const SizedBox(width: 5),
+                          Flexible(child: TextFormField()),
                         ],
                       ),
                     ),
