@@ -2,6 +2,7 @@
 
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/heart_btn.dart';
 import 'package:grocery_app_hadi_v1/widgets/price_widget.dart';
@@ -92,6 +93,11 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                               keyboardType: TextInputType.number,
                               maxLines: 1,
                               enabled: true,
+                              inputFormatters: [
+                                FilteringTextInputFormatter.allow(
+                                  RegExp('[0-9.]'),
+                                ),
+                              ],
                             ),
                           ),
                         ],
