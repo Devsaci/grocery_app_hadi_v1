@@ -87,6 +87,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                           Flexible(
                             child: TextFormField(
                               controller: _quantityTextController,
+                              key: const ValueKey('10'),
                             ),
                           ),
                         ],
