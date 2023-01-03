@@ -88,6 +88,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                             child: TextFormField(
                               controller: _quantityTextController,
                               key: const ValueKey('10'),
+                              style: TextStyle(color: color, fontSize: 18),
                             ),
                           ),
                         ],
