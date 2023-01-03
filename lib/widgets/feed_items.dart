@@ -91,6 +91,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                               style: TextStyle(color: color, fontSize: 18),
                               keyboardType: TextInputType.number,
                               maxLines: 1,
+                              enabled: true,
                             ),
                           ),
                         ],
