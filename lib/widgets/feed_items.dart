@@ -25,7 +25,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    _quantityTextController.dispose();
     super.dispose();
   }
 
