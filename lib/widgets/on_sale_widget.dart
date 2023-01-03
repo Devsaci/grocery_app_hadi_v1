@@ -62,7 +62,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                                 color: color,
                               ),
                             ),
-                            HeartBTN(),
+                            const HeartBTN(),
                           ],
                         ),
                       ],

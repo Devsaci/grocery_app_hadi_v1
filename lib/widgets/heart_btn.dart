@@ -14,7 +14,7 @@ class HeartBTN extends StatelessWidget {
       },
       child: Icon(
         IconlyLight.heart,
-        size: 22,
+        size: 18,
         color: color,
       ),
     );

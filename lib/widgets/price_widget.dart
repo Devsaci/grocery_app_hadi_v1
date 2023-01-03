@@ -14,11 +14,9 @@ class PriceWidget extends StatelessWidget {
         TextWidget(
           text: '1.59\$',
           color: Colors.green,
-          textSize: 22,
+          textSize: 20,
         ),
-        const SizedBox(
-          width: 5,
-        ),
+        const SizedBox(width: 5),
         Text(
           '2.59\$',
           style: TextStyle(

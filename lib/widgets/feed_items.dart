@@ -36,17 +36,18 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 boxFit: BoxFit.fill,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     TextWidget(
                       text: 'Title',
                       color: color,
-                      textSize: 20,
+                      textSize: 16,
                       isTitle: true,
                     ),
-                    HeartBTN(),
+                    const HeartBTN(),
                   ],
                 ),
               ),
@@ -56,7 +57,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const PriceWidget(),
-                    // const SizedBox(width: 8),
+                    const SizedBox(width: 8),
                     Flexible(
                       child: Row(
                         children: [
@@ -64,7 +65,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                             child: TextWidget(
                               text: 'KG',
                               color: color,
-                              textSize: 18,
+                              textSize: 16,
                               isTitle: true,
                             ),
                           ),
