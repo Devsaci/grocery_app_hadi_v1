@@ -90,6 +90,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                               key: const ValueKey('10'),
                               style: TextStyle(color: color, fontSize: 18),
                               keyboardType: TextInputType.number,
+                              maxLines: 1,
                             ),
                           ),
                         ],
