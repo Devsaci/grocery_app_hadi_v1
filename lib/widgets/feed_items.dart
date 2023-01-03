@@ -15,6 +15,7 @@ class FeedsWidget extends StatefulWidget {
 }
 
 class _FeedsWidgetState extends State<FeedsWidget> {
+  final _quantityTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
@@ -70,7 +71,11 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                             ),
                           ),
                           const SizedBox(width: 5),
-                          Flexible(child: TextFormField()),
+                          Flexible(
+                            child: TextFormField(
+                              controller: _quantityTextController,
+                            ),
+                          ),
                         ],
                       ),
                     ),
