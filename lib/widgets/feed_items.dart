@@ -113,12 +113,13 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                   style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all(Theme.of(context).cardColor),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   child: TextWidget(
                     text: 'Add to cart',
                     maxLines: 1,
                     color: color,
-                    textSize: 12,
+                    textSize: 15,
                   ),
                 ),
               ),
