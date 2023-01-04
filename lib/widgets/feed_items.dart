@@ -52,7 +52,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -106,13 +106,18 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                   ],
                 ),
               ),
-              TextButton(
-                onPressed: () {},
-                child: TextWidget(
-                  text: 'Add to cart',
-                  maxLines: 1,
-                  color: color,
-                  textSize: 20,
+              // const Spacer(),
+              SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {},
+                  style: const ButtonStyle(),
+                  child: TextWidget(
+                    text: 'Add to cart',
+                    maxLines: 1,
+                    color: color,
+                    textSize: 12,
+                  ),
                 ),
               ),
             ],
