@@ -106,6 +106,15 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                   ],
                 ),
               ),
+              TextButton(
+                onPressed: () {},
+                child: TextWidget(
+                  text: 'Add to cart',
+                  maxLines: 1,
+                  color: color,
+                  textSize: 20,
+                ),
+              ),
             ],
           ),
         ),
