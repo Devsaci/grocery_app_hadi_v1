@@ -51,8 +51,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 boxFit: BoxFit.fill,
               ),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                padding: const EdgeInsets.symmetric(horizontal: 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -111,7 +110,10 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () {},
-                  style: const ButtonStyle(),
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all(Theme.of(context).cardColor),
+                  ),
                   child: TextWidget(
                     text: 'Add to cart',
                     maxLines: 1,
