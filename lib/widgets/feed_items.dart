@@ -114,6 +114,14 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                     backgroundColor:
                         MaterialStateProperty.all(Theme.of(context).cardColor),
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(12.0),
+                          bottomRight: Radius.circular(12.0),
+                        ),
+                      ),
+                    ),
                   ),
                   child: TextWidget(
                     text: 'Add to cart',
