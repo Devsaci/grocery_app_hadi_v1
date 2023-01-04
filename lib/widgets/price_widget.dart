@@ -14,13 +14,13 @@ class PriceWidget extends StatelessWidget {
         TextWidget(
           text: '1.59\$',
           color: Colors.green,
-          textSize: 20,
+          textSize: 13,
         ),
         const SizedBox(width: 5),
         Text(
           '2.59\$',
           style: TextStyle(
-            fontSize: 15,
+            fontSize: 13,
             color: color,
             decoration: TextDecoration.lineThrough,
           ),

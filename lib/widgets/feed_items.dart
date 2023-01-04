@@ -80,7 +80,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                             child: TextWidget(
                               text: 'KG',
                               color: color,
-                              textSize: 16,
+                              textSize: 13,
                               isTitle: true,
                             ),
                           ),
@@ -89,7 +89,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                             child: TextFormField(
                               controller: _quantityTextController,
                               key: const ValueKey('10'),
-                              style: TextStyle(color: color, fontSize: 18),
+                              style: TextStyle(color: color, fontSize: 13),
                               keyboardType: TextInputType.number,
                               maxLines: 1,
                               enabled: true,
