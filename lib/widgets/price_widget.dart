@@ -3,7 +3,17 @@ import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/text_widget.dart';
 
 class PriceWidget extends StatelessWidget {
-  const PriceWidget({super.key});
+  const PriceWidget({
+    super.key,
+    required this.salePrice,
+    required this.price,
+    required this.textPrice,
+    required this.isOnSale,
+  });
+
+  final double salePrice, price;
+  final String textPrice;
+  final bool isOnSale;
 
   @override
   Widget build(BuildContext context) {
