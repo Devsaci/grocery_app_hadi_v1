@@ -29,12 +29,15 @@ class PriceWidget extends StatelessWidget {
           textSize: 13,
         ),
         const SizedBox(width: 5),
-        Text(
-          '2.59\euro',
-          style: TextStyle(
-            fontSize: 13,
-            color: color,
-            decoration: TextDecoration.lineThrough,
+        Visibility(
+          visible: isOnSale! ? true : false,
+          child: Text(
+            '2.59\euro',
+            style: TextStyle(
+              fontSize: 13,
+              color: color,
+              decoration: TextDecoration.lineThrough,
+            ),
           ),
         )
       ],
