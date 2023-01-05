@@ -111,8 +111,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 child: TextButton(
                   onPressed: () {},
                   style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all(Theme.of(context).cardColor),
+                    backgroundColor: MaterialStateProperty.all(Colors.amber),
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       const RoundedRectangleBorder(
