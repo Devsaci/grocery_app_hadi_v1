@@ -11,24 +11,25 @@ class PriceWidget extends StatelessWidget {
     required this.isOnSale,
   });
 
-  final double? salePrice, price;
-  final String? textPrice;
-  final bool? isOnSale;
+  final double salePrice, price;
+  final String textPrice;
+  final bool isOnSale;
 
   @override
   Widget build(BuildContext context) {
     final Color color = Utils(context).color;
+    double usePrice = isOnSale ? salePrice : price;
     return FittedBox(
         child: Row(
       children: [
         TextWidget(
-          text: '1.59\$',
+          text: '\euro${(usePrice * int.parse(textPrice)).toStringAsFixed(2)}',
           color: Colors.green,
           textSize: 13,
         ),
         const SizedBox(width: 5),
         Text(
-          '2.59\$',
+          '2.59\euro',
           style: TextStyle(
             fontSize: 13,
             color: color,

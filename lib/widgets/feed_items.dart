@@ -70,12 +70,12 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const PriceWidget(
-                      isOnSale: null,
-                      price: null,
-                      salePrice: null,
-                      textPrice: '',
-                    ),
+                    // const PriceWidget(
+                    //   isOnSale: null,
+                    //   price: null,
+                    //   salePrice: null,
+                    //   textPrice: '',
+                    // ),
                     const SizedBox(width: 8),
                     Flexible(
                       child: Row(
