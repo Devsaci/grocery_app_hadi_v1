@@ -11,9 +11,9 @@ class PriceWidget extends StatelessWidget {
     required this.isOnSale,
   });
 
-  final double salePrice, price;
-  final String textPrice;
-  final bool isOnSale;
+  final double? salePrice, price;
+  final String? textPrice;
+  final bool? isOnSale;
 
   @override
   Widget build(BuildContext context) {
