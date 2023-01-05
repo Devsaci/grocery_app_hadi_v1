@@ -23,15 +23,15 @@ class PriceWidget extends StatelessWidget {
         child: Row(
       children: [
         TextWidget(
-          text: 'euro${(usePrice! * int.parse(textPrice!)).toStringAsFixed(2)}',
+          text: '${(usePrice! * int.parse(textPrice!)).toStringAsFixed(2)} £',
           color: Colors.green,
-          textSize: 13,
+          textSize: 10,
         ),
         const SizedBox(width: 5),
         Visibility(
           visible: isOnSale! ? true : false,
           child: Text(
-            'euro${(price! * int.parse(textPrice!)).toStringAsFixed(2)}',
+            '${(price! * int.parse(textPrice!)).toStringAsFixed(2)} £',
             style: TextStyle(
               fontSize: 13,
               color: color,
