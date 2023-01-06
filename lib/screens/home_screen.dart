@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: EdgeInsets.zero,
               childAspectRatio: size.width / (size.height * 0.59),
               children: List.generate(4, (index) => FeedsWidget()),
-            )
+            ),
           ],
         ),
       ),
