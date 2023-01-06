@@ -1,9 +1,7 @@
 //30. Implement the sale screen
 
-import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
-import 'package:grocery_app_hadi_v1/widgets/feed_items.dart';
 import 'package:grocery_app_hadi_v1/widgets/on_sale_widget.dart';
 
 class OnSaleScreen extends StatefulWidget {
