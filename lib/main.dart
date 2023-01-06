@@ -52,7 +52,9 @@ class _MyAppState extends State<MyApp> {
           title: 'Flutter Demo',
           theme: Styles.themeData(themeProvider.getDarkTheme, context),
           home: const BottomBarScreen(),
-          routes: {},
+          routes: {
+            OnSaleScreen.routeName: (context) => const OnSaleScreen(),
+          },
         );
       }),
     );
