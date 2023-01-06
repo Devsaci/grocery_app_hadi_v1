@@ -1,1 +1,3 @@
-class GlobalMethods {}
+class GlobalMethods {
+  static navigateTo() {}
+}
