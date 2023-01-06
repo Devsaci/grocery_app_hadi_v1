@@ -18,8 +18,10 @@ class OnSaleWidget extends StatefulWidget {
 class _OnSaleWidgetState extends State<OnSaleWidget> {
   @override
   Widget build(BuildContext context) {
-    final Color color = Utils(context).color;
+    // ignore: unused_local_variable
     final theme = Utils(context).getTheme;
+    final Color color = Utils(context).color;
+
     Size size = Utils(context).getScreenSize;
     return Padding(
       padding: const EdgeInsets.all(5.0),

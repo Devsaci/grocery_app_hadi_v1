@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/categories_widget.dart';

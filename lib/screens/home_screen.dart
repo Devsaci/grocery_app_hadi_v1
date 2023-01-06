@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final Utils utils = Utils(context);
-    final themeState = utils.getTheme;
+    // final themeState = utils.getTheme;
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
     return Scaffold(
@@ -132,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisCount: 2,
               padding: EdgeInsets.zero,
               childAspectRatio: size.width / (size.height * 0.59),
-              children: List.generate(4, (index) => FeedsWidget()),
+              children: List.generate(4, (index) => const FeedsWidget()),
             ),
           ],
         ),
