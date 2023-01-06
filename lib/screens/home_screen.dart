@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 6),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, OnSaleScreen.routeName);
+                // Navigator.pushNamed(context, OnSaleScreen.routeName);
               },
               child: TextWidget(
                 text: 'View all',
