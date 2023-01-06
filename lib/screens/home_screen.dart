@@ -1,6 +1,7 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
+import 'package:grocery_app_hadi_v1/inner_screens/on_sale_screen.dart';
 
 import 'package:grocery_app_hadi_v1/services/utils.dart';
 import 'package:grocery_app_hadi_v1/widgets/feed_items.dart';
@@ -56,7 +57,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 6),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, OnSaleScreen.routeName);
+              },
               child: TextWidget(
                 text: 'View all',
                 maxLines: 1,
