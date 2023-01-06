@@ -25,7 +25,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
         crossAxisCount: 2,
         padding: EdgeInsets.zero,
         childAspectRatio: size.width / (size.height * 0.59),
-        children: List.generate(4, (index) => const OnSaleWidget()),
+        children: List.generate(6, (index) => const OnSaleWidget()),
       ),
     );
   }
