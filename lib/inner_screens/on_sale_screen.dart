@@ -20,7 +20,10 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
     Size size = utils.getScreenSize;
     return Scaffold(
       appBar: AppBar(
-        leading: InkWell(),
+        // ignore: prefer_const_constructors
+        leading: InkWell(
+          borderRadius: BorderRadius.zero,
+        ),
       ),
       body: GridView.count(
         shrinkWrap: true,
