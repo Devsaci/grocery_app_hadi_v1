@@ -19,11 +19,12 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
     final Utils utils = Utils(context);
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
+
     return Scaffold(
       appBar: AppBar(
         // ignore: prefer_const_constructors
         leading: InkWell(
-          borderRadius: BorderRadius.zero,
+          borderRadius: BorderRadius.circular(12),
           onTap: () {
             Navigator.pop(context);
           },
