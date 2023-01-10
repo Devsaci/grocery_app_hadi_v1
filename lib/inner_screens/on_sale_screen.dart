@@ -19,7 +19,6 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
     final Color color = Utils(context).color;
     Size size = utils.getScreenSize;
     return Scaffold(
-      appBar: AppBar(),
       body: GridView.count(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
