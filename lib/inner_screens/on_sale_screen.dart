@@ -24,7 +24,9 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
         // ignore: prefer_const_constructors
         leading: InkWell(
           borderRadius: BorderRadius.zero,
-          onTap: () {},
+          onTap: () {
+            Navigator.pop(context);
+          },
           child: Icon(
             IconlyLight.arrowLeft2,
             color: color,
