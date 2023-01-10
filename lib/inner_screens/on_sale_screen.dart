@@ -23,6 +23,7 @@ class _OnSaleScreenState extends State<OnSaleScreen> {
         // ignore: prefer_const_constructors
         leading: InkWell(
           borderRadius: BorderRadius.zero,
+          onTap: () {},
         ),
       ),
       body: GridView.count(
